@@ -90,6 +90,7 @@ import {
             alt="/goblins.gif"
             width={100}
           />
+          
             {/* Amount claimed so far */}
             <div className={styles.mintCompletionArea}>
               <div className={styles.mintAreaLeft}>
