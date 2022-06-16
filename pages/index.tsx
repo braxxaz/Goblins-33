@@ -74,12 +74,17 @@ import {
             <h1>{contractMetadata?.name}</h1>
             {/* Description of your NFT Collection */}
             <p className={styles.description}>{contractMetadata?.description}</p>
-            1 free NFT + gas mint per wallet.
+            1 free NFT + gas fees.
           you can claim 2 per tx. dont be fucking greedy.
           <br />
           No roadmap. No Discord. No utility. CC0.
           <br />
           might not be having a roadmap but something will come along in the future.
+          <br />
+          Phase 1: Goblins starting to trip
+          <br />
+          Phase 2: Goblins really messed up
+
         </div>
   
           <div className={styles.imageSide}>
@@ -90,7 +95,7 @@ import {
             alt="/goblins.gif"
             width={100}
           />
-          
+
             {/* Amount claimed so far */}
             <div className={styles.mintCompletionArea}>
               <div className={styles.mintAreaLeft}>
