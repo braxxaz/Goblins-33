@@ -59,7 +59,7 @@ const Home: NextPage = () => {
     try {
       const minted = await EditionDrop?.claim;
       console.log(minted);
-      alert("uccessfully minted NFT!");
+      alert("Successfully minted NFT!");
     } catch (error) {
       console.error(error);
       alert(error);
