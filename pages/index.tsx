@@ -81,9 +81,9 @@ import {
           <br />
           might not be having a roadmap but something will come along in the future.
           <br />
-          Phase 1: Goblins starting to trip
+          Phase 1: Goblins start to trip
           <br />
-          Phase 2: Goblins really messed up
+          Phase 2: Goblins get really messed up
 
         </div>
   
