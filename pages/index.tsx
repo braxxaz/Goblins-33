@@ -125,7 +125,7 @@ import {
                 onClick={mint}
                 disabled={claiming}
               >
-                {claiming ? "Minting..." : "Mint"}
+                {claiming ? "Minting..." : "Mint Me It's Free"}
               </button>
             ) : (
               <button className={styles.mainButton} onClick={connectWithMetamask}>
