@@ -5,6 +5,7 @@ import Head from "next/head";
 import styles from "../styles/Theme.module.css";
 
 // This is the chainId your dApp will work on.
+
 const activeChainId = ChainId.Mainnet;
 
 function MyApp({ Component, pageProps }: AppProps) {

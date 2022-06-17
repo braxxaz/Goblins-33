@@ -7,11 +7,12 @@ import {
     useUnclaimedNFTSupply,
   } from "@thirdweb-dev/react";
   import { useNetworkMismatch } from "@thirdweb-dev/react";
-  import { useAddress, useMetamask } from "@thirdweb-dev/react";
+  import { useAddress, useMetamask, useWalletConnect } from "@thirdweb-dev/react";
   import type { NextPage } from "next";
   import { useState } from "react";
   import styles from "../styles/Theme.module.css";
-  
+
+
   // Put Your NFT Drop Contract address from the dashboard here
   const myNftDropContractAddress = "0x39702Ef85BD607dB1F2B0147Ee8190F013E91A89";
   
@@ -19,9 +20,11 @@ import {
     const nftDrop = useNFTDrop(myNftDropContractAddress);
     const address = useAddress();
     const connectWithMetamask = useMetamask();
+    const connectWithWalletConnect = useWalletConnect();
     const isOnWrongNetwork = useNetworkMismatch();
     const [, switchNetwork] = useNetwork();
-  
+
+
     const [claiming, setClaiming] = useState<boolean>(false);
   
     // Load contract metadata
@@ -43,12 +46,13 @@ import {
       // Make sure the user has their wallet connected.
       if (!address) {
         connectWithMetamask();
+        connectWithWalletConnect();
         return;
       }
   
       // Make sure the user is on the correct network (same network as your NFT Drop is).
       if (isOnWrongNetwork) {
-        switchNetwork && switchNetwork(ChainId.Mumbai);
+        switchNetwork && switchNetwork(ChainId.Mainnet);
         return;
       }
   
@@ -125,12 +129,17 @@ import {
                 onClick={mint}
                 disabled={claiming}
               >
-                {claiming ? "Minting... fuckin wait" : "Mint Me It's Free"}
+                {claiming ? "Minting... fucking wait" : "Mint Me It's Free"}
               </button>
             ) : (
+              <div> 
               <button className={styles.mainButton} onClick={connectWithMetamask}>
-              cOnnEct da Ztupit gUalET
+              cOnnEct meTaMask
               </button>
+              <br></br>
+              <br></br>
+    <button className={styles.mainButton} onClick={connectWithWalletConnect}> cOnnEct WalletConnect </button>
+    </div>
             )}
           </div>
         </div>
