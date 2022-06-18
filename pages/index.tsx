@@ -64,7 +64,7 @@ import {
       setClaiming(true);
   
       try {
-        const minted = await nftDrop?.claim([1]);
+        const minted = await nftDrop?.claim([2]);
         console.log(minted);
         alert(`Successfully minted NFT!`);
       } catch (error) {
