@@ -145,10 +145,10 @@ import {
                   </button>
                   <br></br>
                   <br></br>
-
+{/* 
                   <button className={styles.mainButton} onClick={connectWithWalletConnect}> cOnnEct WaLLetCONnect </button>
                   <br></br>
-                  <br></br>
+                  <br></br> */}
                   <button className={styles.mainButton} onClick={connectWithCoinbaseWallet}>cOnnEct da COInbAse WaLLet</button>
 
                 </div>
