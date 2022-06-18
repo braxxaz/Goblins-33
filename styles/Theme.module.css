@@ -15,6 +15,29 @@
   padding: 8px;
 }
 
+.btn2 {
+  align-items: left;
+  justify-content: center;
+  /* position: static; */
+  font-family: "OlapMetric-One";
+
+  background: #e5e5ea;
+  background-image: linear-gradient(
+    to left,
+    var(--color-primary) 0%,
+    var(--color-secondary) 101.52%
+  );
+  color: rgb(0, 0, 0);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 16px;
+  float: right;
+  margin-right: 33px;
+  margin-top: 13px;
+}
+
 .mintInfoContainer {
   display: flex;
   flex-direction: row;
@@ -111,10 +134,11 @@
 }
 
 .goblinslogo {
-  display:"flex";
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 .footer {

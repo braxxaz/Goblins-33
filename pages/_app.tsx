@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
+import { ChainId, ThirdwebProvider, useDisconnect } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import Head from "next/head";
 import styles from "../styles/Theme.module.css";
@@ -7,6 +7,7 @@ import styles from "../styles/Theme.module.css";
 // This is the chainId your dApp will work on.
 
 const activeChainId = ChainId.Mainnet;
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
