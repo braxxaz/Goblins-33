@@ -12,7 +12,7 @@
 /* Change the values in here to match your branding */
 :root {
   /* Background color of the page */
-  --background-color: #b184ff;
+  --background-color: #40128f;
 
   /* Color of the text/words */
   --text-color: rgb(255, 255, 255);
@@ -36,7 +36,7 @@
 
 body {
   background: var(--background-color);
-  background-image: url("/background.png");
+  background-image: url("/background2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
