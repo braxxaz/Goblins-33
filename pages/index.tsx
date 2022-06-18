@@ -62,7 +62,7 @@ import {
       setClaiming(true);
   
       try {
-        const minted = await nftDrop?.claim(1);
+        const minted = await nftDrop?.claim([1]);
         console.log(minted);
         alert(`Successfully minted NFT!`);
       } catch (error) {
@@ -83,7 +83,7 @@ import {
               <h1>{contractMetadata?.name}</h1>
               {/* Description of your NFT Collection */}
               <p className={styles.description}>{contractMetadata?.description}</p>
-              1 free NFT + gas fees.
+              2 free NFT + gas fees.
               you can claim 2 per tx. dont be fucking greedy.
               <br />
               No roadmap. No Discord. No utility. CC0.
@@ -132,7 +132,10 @@ import {
                   className={styles.mainButton}
                   onClick={mint}
                   disabled={claiming}
+
                 >
+
+
                   {claiming ? "Minting... fucking wait" : "Mint Me It's Free"}
                 </button>
               ) : (
