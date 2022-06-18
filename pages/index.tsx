@@ -52,6 +52,8 @@ import {
         connectWithWalletConnect();
         return;
       }
+
+      
   
       // Make sure the user is on the correct network (same network as your NFT Drop is).
       if (isOnWrongNetwork) {
@@ -72,6 +74,8 @@ import {
         setClaiming(false);
       }
     }
+
+    
   
     return (
       <><div>
