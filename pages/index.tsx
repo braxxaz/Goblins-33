@@ -93,7 +93,8 @@ import {
               Phase 1: Goblins start to trip
               <br />
               Phase 2: Goblins get really messed up
-
+              <br />
+              Phase 3: ....
             </div>
 
             <div className={styles.imageSide}>
