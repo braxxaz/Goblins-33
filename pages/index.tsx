@@ -105,7 +105,7 @@ import {
               {/* Image Preview of NFTs */}
               <img
                 className={styles.image}
-                src="/goblins.gif"
+                src="/goblins2.gif"
                 alt="/goblins.gif"
                 width={100} />
 

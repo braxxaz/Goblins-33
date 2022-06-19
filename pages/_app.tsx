@@ -11,7 +11,8 @@ const activeChainId = ChainId.Mainnet;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider desiredChainId={activeChainId}>
+    <ThirdwebProvider desiredChainId={activeChainId} 
+    >
       <Head>
         <title>Goblins On LSD</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="Goblins On LSD AAAAAAAUUUUUGGGHHHHH gobblins r on zoM gUd LsD KuM jOIn us N lETs tRIPpPpp dA FoK AuT"
         />
       </Head>
+
       <Component {...pageProps} />
     </ThirdwebProvider>
   );
