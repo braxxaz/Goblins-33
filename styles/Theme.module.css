@@ -38,6 +38,17 @@
   margin-top: 13px;
 }
 
+.btn3 {
+  align-items: center;
+  justify-content: center;
+  /* position: static; */
+  border: none;
+  cursor: pointer;
+  float: left;
+  margin-left: 33px;
+  margin-top: 13px;
+}
+
 .mintInfoContainer {
   display: flex;
   flex-direction: row;

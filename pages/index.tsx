@@ -74,11 +74,23 @@ import {
         setClaiming(false);
       }
     }
-
-    
   
     return (
       <><div>
+                  <a href="https://opensea.io/collection/goblinsonlsd" target="_blank" rel="noreferrer" className={styles.btn3}>
+            <img
+              src="/gosld-opensea-icon.png"
+              alt="OpenSea"
+              width={55}
+              height={55} />
+          </a>
+          <a href="https://twitter.com/goblinsonlsd" target="_blank" rel="noreferrer" className={styles.btn3}>
+            <img
+              src="/gosld-twitter-icon.png"
+              alt="Twitter"
+              width={55}
+              height={55} />
+          </a>
         <button className={styles.btn2} onClick={disconnectWallet}>Disconnect Wallet</button>
       </div><div className={styles.container}>
           <div className={styles.mintInfoContainer}>
@@ -87,7 +99,7 @@ import {
               <h1>{contractMetadata?.name}</h1>
               {/* Description of your NFT Collection */}
               <p className={styles.description}>{contractMetadata?.description}</p>
-             1 free NFT + gas fees.
+             2 free NFTs + gas fees.
               you can claim 2 per tx. dont be fucking greedy.
               <br />
               No roadmap. No Discord. No utility. CC0.
@@ -100,7 +112,6 @@ import {
               <br />
               Phase 3: ....
             </div>
-
             <div className={styles.imageSide}>
               {/* Image Preview of NFTs */}
               <img
@@ -108,7 +119,6 @@ import {
                 src="/goblins2.gif"
                 alt="/goblins.gif"
                 width={100} />
-
               {/* Amount claimed so far */}
               <div className={styles.mintCompletionArea}>
                 <div className={styles.mintAreaLeft}>
@@ -130,16 +140,12 @@ import {
                   )}
                 </div>
               </div>
-
               {address ? (
                 <button
                   className={styles.mainButton}
                   onClick={mint}
                   disabled={claiming}
-
                 >
-
-
                   {claiming ? "Minting... fucking wait" : "Mint 2 It's Free"}
                 </button>
               ) : (
@@ -154,28 +160,15 @@ import {
                   <br></br>
                   <br></br> */}
                   <button className={styles.mainButton} onClick={connectWithCoinbaseWallet}>cOnnEct da COInbAse WaLLet</button>
-
                 </div>
               )}
             </div>
           </div>
-          <a href="https://opensea.io/collection/goblinsonlsd" target="_blank" rel="noreferrer" className={styles.goblinslogo}>
-            <img
-              src="/gosld-opensea-icon.png"
-              alt="OpenSea"
-              width={55}
-              height={55} />
-          </a>
-          <a href="https://twitter.com/goblinsonlsd" target="_blank" rel="noreferrer" className={styles.goblinslogo}>
-            <img
-              src="/gosld-twitter-icon.png"
-              alt="Twitter"
-              width={55}
-              height={55} />
-          </a>
           <a href="https://etherscan.io/address/0x39702Ef85BD607dB1F2B0147Ee8190F013E91A89#code" target="_blank" rel="noreferrer" className={styles.mainButton}>Verified Contract Address</a>
           <br />
           {/*2022 Goblins on LSD*/}{"2022 Goblins on LSD"}
+          <br></br>
+                  <br></br>
         </div></>
     );
   };
