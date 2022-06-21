@@ -99,8 +99,8 @@ import {
               <h1>{contractMetadata?.name}</h1>
               {/* Description of your NFT Collection */}
               <p className={styles.description}>{contractMetadata?.description}</p>
-             2 free NFTs + gas fees.
-              you can claim 2 per tx. dont be fucking greedy.
+             1 free NFTs + gas fees.
+             
               <br />
               No roadmap. No Discord. No utility. CC0.
               <br />
@@ -146,7 +146,7 @@ import {
                   onClick={mint}
                   disabled={claiming}
                 >
-                  {claiming ? "Minting... fucking wait" : "Mint 2 It's Free"}
+                  {claiming ? "Minting... fucking wait" : "Mint 1 It's Free"}
                 </button>
               ) : (
                 <div>
