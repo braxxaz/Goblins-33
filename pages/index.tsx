@@ -103,7 +103,7 @@ const Home: NextPage = () => {
            2 free NFTs + gas fees.
            <br />
            2 nfts per tx, wait time to mint more 1 second
-           Don't be fucking greedy!
+           Dont be fucking greedy!
             <br />
             No roadmap. No Discord. No utility. CC0.
             <br />
@@ -144,8 +144,8 @@ const Home: NextPage = () => {
               </div>
             </div>
             {address ? (
-             <> "Set a Number"                                 <br></br>
-             <br></br> <input className={styles.btn4} type='number' onChange={(e) => setQuantity(e.target.value) } /> 
+             <> Set a Number to mint                      <br></br>
+             <br></br> <input className={styles.btn4} type='number' onChange={(e) => setQuantity(parseInt(e.target.value)) } /> 
                                <br></br>
                 <br></br>
               <button
