@@ -165,9 +165,11 @@ import {
             </div>
           </div>
           <a href="https://etherscan.io/address/0x39702Ef85BD607dB1F2B0147Ee8190F013E91A89#code" target="_blank" rel="noreferrer" className={styles.mainButton}>Verified Contract Address</a>
-          <br />
+          <br></br>
+                  <br></br>
           Royalties wallet: 0xfc7BA48d08b849F93f49940ff5187a0DA3D46c10
-          <br />
+          <br></br>
+                  <br></br>
           {/*2022 Goblins on LSD*/}{"2022 Goblins on LSD"}
           <br></br>
                   <br></br>
