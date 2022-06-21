@@ -49,15 +49,37 @@
   margin-top: 23px;
 }
 
+.btn4 {
+  align-items: center;
+  justify-content: center;
+  /* position: static; */
+  font-family: "OlapMetric-One";
+
+  background: #e5e5ea;
+  background-image: linear-gradient(
+    to left,
+    var(--color-primary) 0%,
+    var(--color-secondary) 101.52%
+  );
+  color: rgb(0, 0, 0);
+  padding: 0.5rem ;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 16px;
+  float: center;
+
+}
+
 .mintInfoContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: -13px;
+  margin-top: 13px;
   width: 100%;
   padding: 0 24px;
-  min-height: 720px;
+  min-height: 512px;
   max-width: 95vw;
   gap: 2%;
 
@@ -68,7 +90,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  padding-top: -100%;
+  margin-top: -44;
   width: 45%;
   height: 100%;
 }
@@ -76,6 +99,7 @@
 .description {
   opacity: 1;
   font-size: 1.3rem;
+  padding: 0 12px;
 }
 
 .imageSide {
